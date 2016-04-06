@@ -1,0 +1,17 @@
+<h1>Movie Results</h1>
+
+<div class="container">
+          <p>Angular OMDb API Search</p>
+          <p>Enter a movie by title</p>
+          <p><input type="text" ng-model="movieSearch"></p>
+          <p><button type="button" class="btn btn-info" ng-click="search()">Search! -></button></p> 
+          <p>{{movieSearch}}</p>
+          <div class="row border">
+            <div class="col-md-3 portfolio-item"  ng-repeat="title in results">
+                <a href="#">
+                    {{ title.Title }}
+                </a>
+            </div>
+        </div>
+
+ </div>       
