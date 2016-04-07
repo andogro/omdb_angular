@@ -4,9 +4,9 @@ app.config(function($routeProvider, $locationProvider) {
       templateUrl: 'views/results.html',
       controller: 'mainMovieController'
     })
-    .when('/:id', {
+    .when('/:movies', {
       templateUrl: 'views/show.html',
-      controller: 'mainMovieController'
+      controller: 'singleMovieController'
     })
     .otherwise('/');
 });

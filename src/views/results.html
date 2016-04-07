@@ -1,17 +1,23 @@
-<h1>Movie Results</h1>
+
 
 <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-5 movie-top">
+          <h2>Movie Results</h2>
           <p>Angular OMDb API Search</p>
           <p>Enter a movie by title</p>
           <p><input type="text" ng-model="movieSearch"></p>
           <p><button type="button" class="btn btn-info" ng-click="search()">Search! -></button></p> 
           <p>{{movieSearch}}</p>
-          <div class="row border">
-            <div class="col-md-3 portfolio-item"  ng-repeat="title in results">
-                <a href="#">
-                    {{ title.Title }}
-                </a>
-            </div>
         </div>
+      </div>
 
+      <div class="row row-centered">
+        <div class="col-xs-3 col-centered movie-list" ng-repeat="title in results">
+            <a href="#/{{ title.imdbID }}">
+                {{ title.Title }}
+            </a>
+        </div>
+    </div>
  </div>       
+

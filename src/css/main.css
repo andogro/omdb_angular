@@ -1,1 +1,29 @@
 /* add custom styles */
+
+.movie-list {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #b47ab2;
+}
+
+.movie-top {
+  border: 1px solid black;
+  background-color: #cbf566;
+}
+
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
